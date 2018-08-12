@@ -3,21 +3,27 @@
 ### Keywords
 `proposal`, `Timestamped`, `versioned`, `self-governance`, `immutable`, `off-chain storage`, `git`, `chain-anchored`
 
-Named after the greek term meaning ‘a system of government’, Politeia is the Decred proposal system a social media application where Decred stakeholders submit proposals for projects to upgrade and market the Decred network. 
+Decred's governance has several components. 
 
-Politeia is special in that it is designed to be an immutable and cryptographically verifiable public record of Decred’s governance-data. This means that once a proposal is posted to Politeia, the record of that proposal’s posting can never be altered or deleted. In addition, records of proposals cannot be forged. The time ordered and independently verifiable nature of Politeia ensures that attempts to manipulate Decred’s governance are significantly more difficult than if a traditional website or social media application were in use.
+Ticket-holders vote on-chain on block validity and whether changes to consensus rules should be accepted. There's a lot more to governance than this however, too much to handle on-chain without bloating it significantly.
 
-From a technical standpoint, Politeia is an off-chain storage system comprised  of Git, a popular revision control system, and cryptographic timestamping via DecredTime, a custom server application for storing timestamps on the Decred blockchain.
+Politeia is where the rest of it happens, off-chain but anchored to the Decred chain to make it censorship resistant and to ensure that votes can only be cast by those with skin in the game.
 
-Git tracks and stores changes to Politeia as revisions. These stored revisions make up the public record of Decred governance on Politeia. DecredTime takes unique identifiers of these revisions, called hashes, and anchors them to the Decred blockchain, creating a time sequence that is computationally impossible to recreate.
+Politeia is a reddit-like web platform for handling the submission, discussion and tracking of Decred governance proposals, from the direction and policies of the project to what the treasury funds.
 
-Like reddit, content posted to Politeia must be manually reviewed by a human. This presents a problem common to all social media today: silent censorship. Politeia has a system in place to deal with censorship. 
+The foundation of the Politeia web platform is reddit, but several features have been added which adapt it to Decred's needs.
 
-It works like this:
+Politeia is censor-proof, users can prove when their proposals or comments have been censored by admins. Some degree of censorship is necessary to handle inappropriate (e.g. illegal) submissions. On Politeia, proposals are vetted by administrators to ensure that they meet certain criteria before being displayed publicly. The power to censor becomes much more problematic when it can be wielded secretly, with deniability. 
 
-Once a proposal is submitted, it is classified as ‘unvetted’ and the user who submitted the proposal receives a censorship token. After the proposal has been reviewed and deemed in adherence with proposal guidelines, it is considered ‘vetted’ and becomes available for public viewing. When a proposal becomes vetted, the corresponding censorship token is no longer valid. If a proposal never becomes vetted, the proposal submitter can use their censorship token to publicly prove their proposal was censored. By using censorship tokens, politeia creates a transparent censorship process. Administrators can be held publicly responsible for their actions when found to be acting inappropriately.
+Politeia accounts come with cryptographic keys that are used to sign submissions. Politeia uses DCRtime to generate censorship tokens for each submission. The submitting user can use this censorship token, along with their public key, to demonstrate cryptographically that their submission existed in a particular form at a particular point in time. Unaccountable censorship has no place in Decred's governance.
 
-Politeia is the ideal infrastructure for self-governance of a crypto-currency. To contribute to Decred’s governance, head to decred.org to download the software for your platform and buy decred on exchanges such as bittrex and poloniex.
+To limit spam and sock-puppetry, a fee of 0.1 DCR is charged for creating a new account, and for each proposal submission. User actions on the proposals platform are also fully transparent, including up/down voting on comments.
+
+Once proposals have been vetted they are open for discussion by the community. Proposers can edit their proposal in response to feedback before it gets locked down and goes for a vote. Comments for different versions of a proposal are indexed as such, making it possible to trace the evolution of a proposal in response to community discussion.
+
+Voting to approve or reject proposals happens from within the wallets that hold stakeholders' tickets. When a proposal moves to a vote, every ticket live at that block will have an opportunity to vote yes/no.
+
+The outcomes of these votes will determine Decred's course, and how the project's fund will be used to pursue its aims.
 
 Decred, Decentralized Credits.
 
