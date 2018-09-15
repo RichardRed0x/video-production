@@ -1,7 +1,7 @@
 ## Decred In Depth: On-chain Governance
 ### Voice Over Script
 
-Without a form of on-chain governance, holders of pure proof-of-work currencies like Bitcoin have formal say in decision-making, giving all the power to miners and developers. With no way to keep proof-of-work miners in check *or* agree on consensus rule changes, Bitcoin leaves itself open to 51% attacks and community splitting hard forks.
+Without a form of on-chain governance, holders of pure proof-of-work currencies like Bitcoin have no formal say in decision-making, giving all the power to miners and developers. With no way to keep proof-of-work miners in check *or* agree on consensus rule changes, Bitcoin leaves itself open to 51% attacks and community splitting hard forks.
 
 **Decred's** **Proof-of-Stake Voting** system, (which is part of its hybrid proof-of-work - proof-of-stake protocol), puts power in the hands of its stakeholders, not its miners. By participating in proof-of-stake voting, stakeholders can stop 51% attacks, prevent unwanted hard forks, and shape the future of the project.
 
