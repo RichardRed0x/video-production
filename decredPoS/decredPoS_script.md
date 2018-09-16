@@ -18,7 +18,7 @@ Before it is added to the ticket pool, a ticket must go through the immature sta
 After 256 blocks (or about 20 hours), immature tickets become live and are added to the ticket pool. How long each ticket has to wait in the  pool before being drawn is entirely up to chance. Due to the design of 
 the voting system, the average time to vote is 28 days and the maximum waiting time is 142 days.
 
-Each block randomly draws 5 tickets from the ticket pool. Once a ticket is called, the holder's signed voting ballot must be broadcast to the network from either a self-hosted voting wallet or a designated voting service provider for inclusion in the next block. If the ballot is not broadcast quickly enough, it will miss its chance to vote. This happens rarely, as most solo voters and voting service providers maintain several wallets. Missed tickets can be revoked after 256 blocks but do not get a reward.
+For each block, 5 tickets are randomly called from the ticket pool. Once a ticket is called, the holder's signed voting ballot must be broadcast to the network from either a self-hosted voting wallet or a designated voting service provider for inclusion in the next block. If the ballot is not broadcast quickly enough, it will miss its chance to vote. This happens rarely, as most solo voters and voting service providers maintain several wallets. Missed tickets can be revoked after 256 blocks but do not get a reward.
 
 A ticketholder's ballot will contain one **block vote** and zero to many **consensus votes** to be recorded *on-chain*.
 
